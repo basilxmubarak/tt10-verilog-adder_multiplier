@@ -9,11 +9,11 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-It adds the three one bit binary inputs and gives the outputs sum and carry
+It gives the sum or the product of the given 3bit input numbers according to the enable input.if the enable is high it will give the sum and if the enable is low it will give the product
 
 ## How to test
 
-give three inputs to ui_in[0],ui_in[1],ui_in[2]
+give three inputs to ui_in[2:0] and ui_in[5:3] and give enable to ui_in[6]
 
 ## External hardware
 
