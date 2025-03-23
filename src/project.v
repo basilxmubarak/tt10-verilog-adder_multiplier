@@ -18,14 +18,14 @@ module tt_um_adder_multiplier(
     wire [3:0] adder_output;
     wire[5:0] multiplier_output;
     kogge_stone_adder_3bit adder_inst(
-        .A[2:0](ui_in[2:0]),
-        .B[2:0](ui_in[5:3]),
+        .A(ui_in[2:0]),
+        .B(ui_in[5:3]),
         .Enable(ui_in[6]),
         .Sum_Carry(adder_output)
     );
     array_multiplier_3bit multiplier_inst(
-        .A[2:0](ui_in[2:0]),
-        .B[2:0](ui_in[5:3]),
+        .A(ui_in[2:0]),
+        .B(ui_in[5:3]),
         .Enable(ui_in[6]),
         .Product(multiplier_output)
     );
